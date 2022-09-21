@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (5.4.4)
+  - JGProgressHUD (2.2)
+  - netfox (1.20.0)
+  - SwiftyJSON (4.3.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - JGProgressHUD
+  - netfox
+  - SwiftyJSON (~> 4.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - JGProgressHUD
+    - netfox
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  JGProgressHUD: d83d7a981b85d11205e19ff8ad5bb9c40571c847
+  netfox: 6b5c9724304b0cd99ca8515ac732a9f710e4ea5f
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+
+PODFILE CHECKSUM: 3830a4ddb515086bb02e198a0da600e74e1ea966
+
+COCOAPODS: 1.11.2

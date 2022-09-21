@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bHO-GY-LTy">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Web View View Controller-->
+        <scene sceneID="QL8-vk-eO6">
+            <objects>
+                <viewController storyboardIdentifier="WebViewViewController" id="bHO-GY-LTy" customClass="WebViewViewController" customModule="Mandiri" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6FM-cV-q7H">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KQl-9o-kFx">
+                                <rect key="frame" x="0.0" y="44" width="414" height="798"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqX-D9-2QA">
+                                <rect key="frame" x="344" y="792" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.66666666669999997" green="0.098039215690000001" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JfQ-t2-crA"/>
+                                    <constraint firstAttribute="width" constant="50" id="hWR-h6-HLW"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="arrow.uturn.backward" catalog="system"/>
+                                <connections>
+                                    <action selector="btnBack:" destination="bHO-GY-LTy" eventType="touchUpInside" id="bSM-32-OIy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="N46-Zy-fej"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="N46-Zy-fej" firstAttribute="trailing" secondItem="KQl-9o-kFx" secondAttribute="trailing" id="4bv-qe-Brc"/>
+                            <constraint firstItem="gqX-D9-2QA" firstAttribute="leading" secondItem="KQl-9o-kFx" secondAttribute="trailing" constant="-70" id="LaV-Sa-n5y"/>
+                            <constraint firstItem="N46-Zy-fej" firstAttribute="bottom" secondItem="gqX-D9-2QA" secondAttribute="bottom" constant="20" id="R8y-gR-Sdx"/>
+                            <constraint firstItem="KQl-9o-kFx" firstAttribute="leading" secondItem="N46-Zy-fej" secondAttribute="leading" id="VEY-ze-zZH"/>
+                            <constraint firstItem="gqX-D9-2QA" firstAttribute="bottom" secondItem="KQl-9o-kFx" secondAttribute="bottom" id="fRa-h5-RJ3"/>
+                            <constraint firstItem="KQl-9o-kFx" firstAttribute="top" secondItem="N46-Zy-fej" secondAttribute="top" id="lw6-8E-foN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="PMS-iG-7HK"/>
+                    <connections>
+                        <outlet property="WebView" destination="KQl-9o-kFx" id="Myu-3u-1Kr"/>
+                        <outlet property="btnBack" destination="gqX-D9-2QA" id="J5S-gf-vjO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w0w-5a-EgY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="175" y="86"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.uturn.backward" catalog="system" width="128" height="112"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
